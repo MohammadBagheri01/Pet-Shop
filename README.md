@@ -1,16 +1,57 @@
-# React + Vite
+# 📝 Pet Shop App – React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+یک پروژه فروشگاهی پت شاپ ساخته شده با React 19, Vite 7, Sass و Swiper
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+⚛ React 19
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚡ Vite 7
 
-## Expanding the ESLint configuration
+🎨 Sass (SCSS)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧭 React Router 7
+
+🖼 Swiper 
+
+🔔 SweetAlert (هشدار و تاییدیه‌ها)
+
+🎯 React Icons
+
+🧹 ESLint
+
+## ✨ Features
+
+صفحه لیست محصولات
+
+🔎 صفحه جزئیات محصول
+
+🛒 سبد خرید (Cart) ساده
+
+🎨 طراحی ریسپانسیو
+
+📦 ساختار ماژولار و کامپوننت محور
+
+🔔 هشدارها و تاییدیه‌ها با SweetAlert
+
+# 📦 Installation & Setup
+```
+git clone https://github.com/MohammadBagheri01/Pet-Shop.git
+cd Blog
+npm install
+npm run dev
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
