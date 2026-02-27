@@ -1,0 +1,54 @@
+.sidebar {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__title {
+    color: var(--primary);
+    font-family: "Dana-Medium";
+  }
+  &__pay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    @media (max-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  &__total_price {
+    color: var(--text);
+    font-family: "Dana-Medium";
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  &__link {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 80%;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    height: 40px;
+    font-family: "Dana-Medium";
+    color: var(--text);
+    transition: all 0.3s;
+      @media (max-width: 768px) {
+      font-size: 16px;
+    }
+    &:hover {
+      background-color: var(--dark_primary);
+      border-color: var(--dark_primary);
+    }
+  }
+}

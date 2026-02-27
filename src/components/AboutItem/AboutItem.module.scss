@@ -1,0 +1,36 @@
+.about_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px;
+  width: 27%;
+  gap: 1rem;
+  transition: all .5s;
+  padding: .5rem;
+  border-radius: 10px;
+  &:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px var(--primary);
+  }
+  &__icon {
+    font-size: 2rem;
+    color: var(--text);
+    background-color: #026b19;
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  &__title {
+    font-family: "Dana-Medium";
+  }
+  &__description {
+    font-family: "Dana-light";
+    font-size: 12px;
+    margin-top: 0.5rem;
+    text-align: justify;
+  }
+}

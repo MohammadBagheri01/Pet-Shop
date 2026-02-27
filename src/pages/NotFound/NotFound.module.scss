@@ -1,0 +1,56 @@
+.notfound {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+
+  &__content {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__code {
+    font-family: "Dana-Black";
+    font-size: clamp(6rem, 12vw, 10rem);
+    color: rgba(255, 255, 255, 0.15);
+    line-height: 1;
+  }
+
+  &__title {
+    font-family: "Dana-Black";
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    color: #fff;
+  }
+
+  &__text {
+    font-family: "Dana-Light";
+    font-size: 1rem;
+    color: #d1d5db;
+    line-height: 1.8;
+  }
+
+  &__btn {
+    margin-top: 1rem;
+    align-self: center;
+    font-family: "Dana-Medium";
+    background: #16a34a;
+    color: #fff;
+    padding: 0.8rem 2.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: #15803d;
+      transform: translateY(-2px);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+:root {
+  --bg: #030502;
+  --text: #f5f5f5;
+  --primary: #00ff39;
+  --secendary:#363636;
+  --dark_primary:#028a1b;
+}
+
+[data-theme="light"] {
+  --bg: #eeeeee;
+  --text: #111111;
+  --primary: #00ff39;
+  --secendary:#8d8d8d;
+  --dark_primary:#25bd41;
+}

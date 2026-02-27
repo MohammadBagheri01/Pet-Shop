@@ -1,0 +1,142 @@
+.product_card_container {
+  width: 200px;
+  height: 270px;
+  position: relative;
+  cursor: pointer;
+  &:hover .product_card__title::after,
+  &:hover .product_card__title::before {
+    height: 50%;
+  }
+  &:hover .product_card__title h3,&:hover .product_card__title p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .product_card {
+    width: 200px;
+    height: 270px;
+    background-color: var(--secendary);
+    clip-path: path(
+      "M 10,0 L 130,0 A 10,10 0,0,1 140,10 L 140,50 A 20,20 0,0,0 160,70 L 190,60 A 10,10 0,0,1 200,70 L 200,230 L 71,240 L 60,270 L 10,270 A 10,10 0,0,1 0,260 L 0,10 A 10,10 0,0,1 10,0 Z"
+    );
+    &__image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: -1;
+      img {
+        width: 50%;
+      }
+    }
+    &__title {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: .5rem 0;
+      &::after,
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.2s;
+      }
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+      h3 {
+        text-align: center;
+        font-size: 14px;
+        color: var(--primary);
+        transition-delay: 1s;
+        opacity: 0;
+        transition: all 0.5s;
+        z-index: 1;
+        font-family: 'roboto';
+      }
+      p{
+        text-align: center;
+        font-size: 12px;
+        color: var(--text);
+        transition-delay: 1s;
+        opacity: 0;
+        transition: all 0.5s;
+        z-index: 1;
+        font-family: 'roboto';
+      }
+    }
+
+  }
+      &__offBtn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      aspect-ratio: 1/1;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 0;
+      outline: 0;
+      background-color: var(--dark_primary);
+      color: var(--text);
+      font-family: 'roboto';
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+    &__btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 140px;
+      height: 40px;
+      border: 0;
+      background-color: var(--dark_primary);
+      color:var(--text);
+      border-bottom-right-radius: 10px;
+      clip-path: path("M 13,13 L 140,4 L 140,40 L 4,40  Z");
+      text-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: .5rem;
+      cursor: pointer;
+      font-family: 'Dana-light';
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -75%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        transform: skewX(-25deg);
+        transition: 0.7s;
+      }
+      &:hover::after {
+        left: 125%;
+      }
+    }
+}

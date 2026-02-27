@@ -1,0 +1,170 @@
+.product_detail {
+  width: 80%;
+  margin: 7rem auto;
+  padding: 2rem 0;
+  &__head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-wrap: wrap;
+       @media screen and (max-width:990px) {
+          justify-content: center;
+
+    }
+       @media screen and (max-width:480px) {
+            width: 90%;
+  margin: 9rem auto;
+    }
+  }
+  &__image {
+    width: 40%;
+    padding: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    min-width: 270px;
+    box-shadow: 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:990px) {
+      width: 70%;
+    }
+           @media screen and (max-width:480px) {
+            width: 90%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__text_content {
+    width: 55%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+       @media screen and (max-width:990px) {
+      width: 100%;
+    }
+  }
+  &__title {
+    color: var(--primary);
+    font-family: "roboto";
+    text-align: end;
+    width: 100%;
+       @media screen and (max-width:990px) {
+      text-align: center;
+    }
+               @media screen and (max-width:480px) {
+           font-size: 16px;
+    }
+  }
+
+  &__description {
+    font-family: "roboto";
+    text-align: end;
+    width: 100%;
+       @media screen and (max-width:990px) {
+      text-align: center;
+    }
+               @media screen and (max-width:480px) {
+           font-size: 13px;
+           text-align: justify;
+    }
+  }
+
+  &__pay {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border-top: 1px solid;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    gap:1rem  ;
+  }
+  &__prices {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+  }
+  &__price {
+    font-family: "Dana-light";
+    font-size: 1.5rem;
+    color: var(--dark_primary);
+  }
+  &__total_price {
+    font-family: "Dana-Medium";
+    font-size: 1.75rem;
+  }
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    height: calc(60px + 0.25rem);
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40px;
+    height: 100px;
+    gap: 0.25rem 0;
+    button {
+      width: 100%;
+      height: 30px;
+      font-size: 20px;
+      background-color: var(--secendary);
+      color: var(--text);
+      border: 0;
+      padding: 0.25rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  &__count_value {
+    height: 100%;
+    display: block;
+    background-color: var(--secendary);
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      border-radius: 10px;
+
+  }
+  &__clear_btn{
+    border: 0;
+    background-color: inherit;
+    color: rgb(218, 3, 3);
+    font-size: 30px;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+    }
+  }
+  &__add_btn{
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--dark_primary);
+    color: var(--text);
+    font-family: 'Dana-Medium';
+    cursor: pointer;
+               @media screen and (max-width:480px) {
+            width: 70%;
+    }
+  }
+
+}

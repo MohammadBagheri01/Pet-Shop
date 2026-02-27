@@ -1,0 +1,55 @@
+.item{
+    width: 100%;
+   box-shadow: 0 0 5px ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+    &__image{
+        width: 100px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        img{
+            height: 100%;
+        }
+    }
+    &__title{
+        font-family: 'roboto';
+        font-size: 12px;
+    }
+    &__price{
+        font-family: 'Dana-light';
+    }
+    &__count{
+        margin-right: auto;
+        display: flex;
+        gap: .25rem;
+
+    }
+    &__count_btn{
+        display: flex;
+        gap: .25rem;
+        button{
+           width: 25px;
+           height: 20px;
+           border: 0;
+           background-color: var(--secendary);
+           color: var(--text);
+           border-radius: 20px;
+           cursor: pointer;
+           font-size: 18px;
+        }
+    }
+    &__del_btn{
+        background-color: inherit;
+        border: 0;
+        color: rgb(204, 4, 4);
+        font-size: 30px;
+    }
+}

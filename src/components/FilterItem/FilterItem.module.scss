@@ -1,0 +1,16 @@
+.filter {
+  &__item {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    border-bottom: 1px solid  ;
+    padding: .5rem;
+    cursor: pointer;
+
+  }
+  &__label {
+    font-family: "Dana-light";
+    font-size: 12px;
+    user-select: none;
+  }
+}

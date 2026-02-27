@@ -1,0 +1,136 @@
+.pay {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dana-light', Tahoma, sans-serif;
+  
+  &__box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    min-width: 270px;
+    max-width: 500px;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    font-family: 'Dana-Medium', Tahoma, sans-serif;
+    color: var(--primary);
+  }
+
+  &__summary {
+    font-size: 0.9rem;
+    color: #3d3d3d;
+    
+  }
+
+  &__card {
+    background: linear-gradient(135deg, #1e63ff, #2f80ff);
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    min-height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  flex-wrap: wrap;
+
+  }
+
+  &__card_number {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-family: 'Dana-Medium', monospace, sans-serif;
+  }
+
+  &__card_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-family: 'Dana-light', Tahoma, sans-serif;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+    color: #555;
+  }
+
+  &__input {
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    outline: none;
+    font-family: 'Dana-light', Tahoma, sans-serif;
+
+    &:focus {
+      border-color: #2f80ff;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+  }
+
+  &__btn {
+    flex: 1;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: 'Dana-Medium', Tahoma, sans-serif;
+
+    &--primary {
+      background: #2f80ff;
+      color: #fff;
+    }
+
+    &--danger {
+      background: #e63946;
+      color: #fff;
+    }
+  }
+
+  &__notice {
+    margin-top: 1rem;
+    background: #fff4cc;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+    padding: 0.6rem;
+    font-size: 0.7rem;
+    color: #a36b00;
+    font-family: 'Dana-light', Tahoma, sans-serif;
+  }
+}

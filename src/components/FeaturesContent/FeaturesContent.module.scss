@@ -1,0 +1,87 @@
+.container {
+  width: 80%;
+  min-height: 100vh;
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem 0;
+  }
+//   @media screen and (max-width: 480px) {
+//  width: 90%;
+//   }
+  &__content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @media screen and (max-width: 900px) {
+      order: 2;
+      width: 100%;
+      align-items: center;
+    }
+    .first_title {
+      font-size: 1.5rem;
+      font-family: "Dana-Black";
+      color: var(--text);
+
+     
+    }
+    .secend_title {
+      font-size: 3rem;
+      font-family: "roboto";
+      color: var(--primary);
+      
+   
+    }
+    .description {
+      margin-top: 1rem;
+      font-family: "Dana-light";
+      width: 100%;
+      text-align: justify;
+      color: var(--text);
+    }
+    .btn {
+      background-color: var(--primary);
+      border: 0;
+      width: 50%;
+      border-radius: 10px;
+      padding: 1rem;
+      font-family: "Dana-Medium";
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.5s;
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px var(--primary);
+      }
+    }
+  }
+&__image {
+  width: 38%;
+  min-width: 270px;
+  perspective: 1000px;
+  @media screen and (max-width: 900px) {
+    order: 1;
+    width: 80%;
+  }
+  @media screen and (max-width: 480px) {
+    order: 1;
+    width: 90%;
+  }
+
+ img {
+    width: 100%;
+    transition: transform 0.25s ease-out;
+    will-change: transform;
+  }
+}
+
+}

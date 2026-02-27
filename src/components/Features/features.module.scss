@@ -1,0 +1,48 @@
+.features {
+  margin-top: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem 0;
+  &__head {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__title{
+    color: var(--primary);
+    font-size: 3rem;
+    font-family: "Dana-Black";
+    @media screen and (max-width:480px) {
+    font-size: 2rem; 
+    }
+  }
+  &__list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:2rem;
+  }
+  &__content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:var(--secendary) ;
+
+   .elementor_shape_fill {
+  fill: var(--bg);
+}
+    .wave{
+      transform: rotate(180deg) translateY(-5px);
+    }
+  }
+}

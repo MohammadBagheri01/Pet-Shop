@@ -1,0 +1,45 @@
+.footer {
+  width: 100%;
+  padding:3rem 2rem;
+  // background-color: #171717;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__brand {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    .title {
+      font-family: "Dana-Black";
+      font-size: 3rem;
+      color: var(--primary);
+      user-select: none;
+    }
+    .description {
+      font-family: "Dana-light";
+          color: var(--text);
+
+      user-select: none;
+    }
+  }
+  &__list{
+    color: var(--text);
+  }
+  &__socialMedia{
+    display: flex; gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+}
