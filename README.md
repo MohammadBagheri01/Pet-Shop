@@ -38,7 +38,7 @@
 # 📦 Installation & Setup
 ```
 git clone https://github.com/MohammadBagheri01/Pet-Shop.git
-cd Blog
+cd pet-shop
 npm install
 npm run dev
 ```
